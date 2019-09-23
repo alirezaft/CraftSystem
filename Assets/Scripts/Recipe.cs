@@ -1,20 +1,34 @@
-﻿using System;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-//Ingredients, required time and all of the necessary data for crafting an item.
-[CreateAssetMenu(fileName = "New Recipe", menuName = "Craft recipe", order = 20)]
-public class Recipe : ScriptableObject
+//Each recipe creates an item which is referred to as an id
+public class Recipe
 {
-    [SerializeField] private string name;
-    [SerializeField] private int craftTime;
-    //Should fill this part in order of the resources enum
-    //TODO: Find an approach to make it more friendly. Show text or something. 
-    [SerializeField] private int[] ingredients;
-    [SerializeField] private Category category;
+    private string Name;
+    private Dictionary<string, int> Ingredients;
+    private float CraftTime;
 
-    public Recipe()
+    public Recipe(string name, float craftTime, Dictionary<string, int>ingredients)
     {
-        ingredients = new int[Enum.GetNames(typeof(Resources)).Length];
-//        var res = Enum.GetNames(typeof(Resources));
+        Name = name;
+        CraftTime = craftTime;
+        Ingredients = ingredients;
+        
+    }
+
+    public string GetName()
+    {
+        return Name;
+    }
+
+    public float GetCraftTime()
+    {
+        return CraftTime;
+    }
+
+    public Dictionary<string, int> GetIngredients()
+    {
+        return Ingredients;
     }
 }

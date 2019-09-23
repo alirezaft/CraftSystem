@@ -8,8 +8,15 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Category.cs" t="Include" />
+          <e p="Core" t="Include">
+            <e p="CraftManager.cs" t="Include" />
+            <e p="RecipeJSONParser.cs" t="Include" />
+          </e>
+          <e p="ExternalLibraries" t="Include">
+            <e p="JSONObject.cs" t="Include" />
+            <e p="VectorTemplates.cs" t="Include" />
+          </e>
           <e p="Recipe.cs" t="Include" />
-          <e p="Resources.cs" t="Include" />
         </e>
       </e>
       <e p="CraftSystem.sln" t="IncludeFlat" />

@@ -1,0 +1,125 @@
+[
+    {
+        "Name": "Rope",
+        "CraftTime": 3,
+        "Ingredients": {
+            "Grass": 3
+        }
+    },  {
+        "Name": "Board",
+        "CraftTime": 3,
+        "Ingredients": {
+            "Wood": 3
+        }
+    }, {
+        "Name": "Block",
+        "CraftTime": 3,
+        "Ingredients": {
+            "Stone": 3
+        }
+    }, {
+        "Name" : "Axe",
+		"CraftTime": 3,
+		"Ingredients": {
+			"Wood": 1,
+			"Stone": 1
+		}
+	}, {
+        "Name": "Pickax",
+		"CraftTime": 3,
+		"Ingredients": {
+			"Wood": 1,
+			"Stone": 2
+		}
+	}, {
+        "Name": "Sword",
+        "CraftTime": 4,
+        "Ingredients": {
+            "Wood": 2,
+            "Stone": 2
+        }
+    }, {
+        "Name": "Iron axe",
+        "CraftTime": 5,
+        "Ingredients": {
+            "Wood": 2,
+            "Iron": 1
+        }
+    }, {
+        "Name": "Iron pickax",
+        "CraftTime": 5,
+        "Ingredients": {
+            "Wood": 2,
+            "Iron": 2
+        }
+    }, {
+        "Name": "Iron sword",
+        "CraftTime": 6,
+        "Ingredients": {
+            "Wood": 3,
+            "Iron": 2
+        }
+    }, {
+        "Name": "Shovel",
+        "CraftTime": 5,
+        "Ingredients": {
+            "Wood": 2, 
+            "Stone": 3
+        }
+    }, {
+        "Name": "Iron shovel",
+        "CraftTime": 6, 
+        "Ingredients": {
+            "Wood": 2,
+            "Iron": 2
+        }
+    }, {
+        "Name": "Wooden armor",
+        "CraftTime": 6,
+        "Ingredients": {
+            "Wood": 5,
+            "Rope": 2
+        }
+    }, {
+        "Name": "Stone armor",
+        "CraftTime": 7,
+        "Ingredients": {
+            "Block": 3,
+            "Rope": 2
+        }
+    }, {
+        "Name": "Iron armor",
+        "CraftTime": 8,
+        "Ingredients": {
+            "Iron": 3,
+            "Rope": 2
+        }
+    }, {
+        "Name": "Juice",
+        "CraftTime": 3,
+        "Ingredients": {
+            "Fruit": 3,
+            "Water": 1
+        }
+    }, {
+        "Name": "Fruit salad",
+        "CraftTime": 4,
+        "Ingredients": {
+            "Fruit": 5
+        }
+    }, {
+        "Name": "Kebab",
+        "CraftTime": 4, 
+        "Ingredients": {
+            "Meat": 3
+        }
+    }, {
+        "Name": "Soup",
+        "CraftTime": 5,
+        "Ingredients": {
+            "Meat": 1,
+            "Vegetables": 2,
+            "Water": 3
+        }
+    }
+]

@@ -12,6 +12,10 @@
             <e p="CraftManager.cs" t="Include" />
             <e p="RecipeJSONParser.cs" t="Include" />
           </e>
+          <e p="Example" t="Include">
+            <e p="Inventory.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+          </e>
           <e p="ExternalLibraries" t="Include">
             <e p="JSONObject.cs" t="Include" />
             <e p="VectorTemplates.cs" t="Include" />

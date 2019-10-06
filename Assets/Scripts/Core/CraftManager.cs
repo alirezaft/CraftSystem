@@ -12,7 +12,8 @@ public class CraftManager : MonoBehaviour
         GenerateActualRecipes();
     }
 
-    //This function creates Recipe objects based on Recipes.json to be used in game.
+    //This function creates Recipe objects based on Recipes.json to use them in game.
+    //Recipes are saved in Recipes array.
     private void GenerateActualRecipes()
     {
         Debug.Log("Generating recipes");
@@ -35,9 +36,52 @@ public class CraftManager : MonoBehaviour
                 ingredient.Add(key, value);
             }
             Recipes[j] = new Recipe(name, time, ingredient);
-            
-            
+            j++;
+
         }
     }
+
+    //When user wants to create an item, this method should be called.
+    //It should return a new instance from the class that describes your items.
+    //Change the return type if you have written your own Item class.
+    //You can find example Item class in Examples folder.
+    public void CraftItem(string name)
+    {
+        var recipe = FindRecipe(name);
+
+        //There's not a recipe with this name
+        if (recipe == null)
+        {
+            StartCoroutine(Wait(0));
+            Debug.Log("Item not found!");
+        }
+        StartCoroutine(Wait(recipe.GetCraftTime()));
+        
+    }
+
+    //To make system work with your in-game code and keep it dynamic, instead of calling WaitForSeconds in CraftItem,
+    //This function will be called.
+    private IEnumerator Wait(float t)
+    {
+        yield return new WaitForSeconds(t);
+    }
+
+    //Finds a specific recipe with the given name
+    //You can use this method to check requirements in your inventory class.
+    //I used it in my example inventory.
+    //TODO: Write an example inventory
+    public Recipe FindRecipe(string name)
+    {
+        foreach (Recipe r in Recipes)
+        {
+            if (r.GetName().Equals(name))
+            {
+                return r;
+            }
+        }
+
+        return null;
+    }
+    
     
 }
